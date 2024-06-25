@@ -229,9 +229,9 @@ class SpeechStream(stt.SpeechStream):
                     if self._opts.language:
                         live_config["language"] = self._opts.language
 
-                    headers = {"Authorization": f"Token {self._api_key}"{self.extra_url_parameters}}
+                    headers = {"Authorization": f"Token {self._api_key}"}
 
-                    url = f"wss://api.deepgram.com/v1/listen?{urlencode(live_config).lower()}"
+                    url = f"wss://api.deepgram.com/v1/listen?{urlencode(live_config).lower()}{self.extra_url_parameters}"
                     ws = await self._session.ws_connect(url, headers=headers)
                     retry_count = 0  # connected successfully, reset the retry_count
 
