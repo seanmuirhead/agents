@@ -59,6 +59,7 @@ class STT(stt.STT):
         model: DeepgramModels = "nova-2-general",
         api_key: str | None = None,
         min_silence_duration: int = 0,
+        extra_url_parameters: str | None = None,
         http_session: aiohttp.ClientSession | None = None,
     ) -> None:
         super().__init__(streaming_supported=True)
@@ -66,6 +67,7 @@ class STT(stt.STT):
         if api_key is None:
             raise ValueError("Deepgram API key is required")
         self._api_key = api_key
+        self.extra_url_parameters = extra_url_parameters or ""
 
         self._opts = STTOptions(
             language=language,
@@ -227,7 +229,7 @@ class SpeechStream(stt.SpeechStream):
                     if self._opts.language:
                         live_config["language"] = self._opts.language
 
-                    headers = {"Authorization": f"Token {self._api_key}"}
+                    headers = {"Authorization": f"Token {self._api_key}"{self.extra_url_parameters}}
 
                     url = f"wss://api.deepgram.com/v1/listen?{urlencode(live_config).lower()}"
                     ws = await self._session.ws_connect(url, headers=headers)
