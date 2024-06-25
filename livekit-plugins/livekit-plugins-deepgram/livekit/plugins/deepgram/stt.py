@@ -44,6 +44,7 @@ class STTOptions:
     smart_format: bool
     no_delay: bool
     endpointing: int | None
+    extra_url_parameters: str | None = None
 
 
 class STT(stt.STT):
@@ -67,7 +68,6 @@ class STT(stt.STT):
         if api_key is None:
             raise ValueError("Deepgram API key is required")
         self._api_key = api_key
-        self.extra_url_parameters = extra_url_parameters or ""
 
         self._opts = STTOptions(
             language=language,
@@ -78,6 +78,7 @@ class STT(stt.STT):
             smart_format=smart_format,
             no_delay=no_delay,
             endpointing=min_silence_duration,
+            extra_url_parameters=f"&{extra_url_parameters}" if extra_url_parameters else "",
         )
         self._session = http_session
 
@@ -231,7 +232,7 @@ class SpeechStream(stt.SpeechStream):
 
                     headers = {"Authorization": f"Token {self._api_key}"}
 
-                    url = f"wss://api.deepgram.com/v1/listen?{urlencode(live_config).lower()}{self.extra_url_parameters}"
+                    url = f"wss://api.deepgram.com/v1/listen?{urlencode(live_config).lower()}{self._opts.extra_url_parameters}"
                     ws = await self._session.ws_connect(url, headers=headers)
                     retry_count = 0  # connected successfully, reset the retry_count
 
