@@ -477,16 +477,20 @@ class SynthesizeStream(tts.SynthesizeStream):
 
                     b64data = base64.b64decode(audio)
                     frame: rtc.AudioFrame
-                    if encoding == "mp3":
-                        frames = mp3_decoder.decode_chunk(b64data)
-                        frame = utils.merge_frames(frames)
-                    else:
-                        frame = rtc.AudioFrame(
-                            data=b64data,
-                            sample_rate=self._opts.sample_rate,
-                            num_channels=1,
-                            samples_per_channel=len(b64data) // 2,
-                        )
+                    try:
+                        if encoding == "mp3":
+                            frames = mp3_decoder.decode_chunk(b64data)
+                            frame = utils.merge_frames(frames)
+                        else:
+                            frame = rtc.AudioFrame(
+                                data=b64data,
+                                sample_rate=self._opts.sample_rate,
+                                num_channels=1,
+                                samples_per_channel=len(b64data) // 2,
+                            )
+                    except ValueError:
+                        logger.exception("failed to decode audio frame")
+                        continue
 
                     text = ""
                     if data.get("alignment"):
