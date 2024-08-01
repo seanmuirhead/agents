@@ -24,7 +24,7 @@ with open(os.path.join(here, "livekit", "agents", "version.py"), "r") as f:
 
 
 setuptools.setup(
-    name="livekit-agents",
+    name="livekit-agents-fork",
     version=about["__version__"],
     description="LiveKit Python Agents",
     long_description=(here / "README.md").read_text(encoding="utf-8"),
