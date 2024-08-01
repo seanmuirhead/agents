@@ -44,7 +44,7 @@ setuptools.setup(
     ],
     keywords=["webrtc", "realtime", "audio", "video", "livekit", "agents", "AI"],
     license="Apache-2.0",
-    packages=setuptools.find_namespace_packages(include=["livekit_fork.agents.*"]),
+    packages=setuptools.find_namespace_packages(include=["livekit_fork.*"]),
     python_requires=">=3.9.0",
     install_requires=[
         "click~=8.1",
