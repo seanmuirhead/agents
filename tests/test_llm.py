@@ -2,8 +2,8 @@ import asyncio
 from enum import Enum
 from typing import Annotated
 
-from livekit.agents import llm
-from livekit.agents.llm import ChatContext, FunctionContext, TypeInfo, ai_callable
+from livekit_fork.agents import llm
+from livekit_fork.agents.llm import ChatContext, FunctionContext, TypeInfo, ai_callable
 from livekit.plugins import openai
 
 

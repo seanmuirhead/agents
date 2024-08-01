@@ -17,7 +17,7 @@ from .version import __version__
 
 __all__ = ["VAD", "VADStream", "__version__"]
 
-from livekit.agents import Plugin
+from livekit_fork.agents import Plugin
 
 from .log import logger
 

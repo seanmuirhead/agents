@@ -18,7 +18,7 @@ from dataclasses import dataclass
 from typing import Union
 
 from livekit import rtc
-from livekit.agents import tts, utils
+from livekit_fork.agents import tts, utils
 
 from google.cloud import texttospeech
 from google.cloud.texttospeech_v1.types import SsmlVoiceGender, SynthesizeSpeechResponse

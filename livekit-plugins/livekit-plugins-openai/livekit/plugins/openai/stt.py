@@ -22,8 +22,8 @@ from dataclasses import dataclass
 
 import aiohttp
 from livekit import agents
-from livekit.agents import stt, utils
-from livekit.agents.utils import AudioBuffer
+from livekit_fork.agents import stt, utils
+from livekit_fork.agents.utils import AudioBuffer
 
 from .models import WhisperModels
 from .utils import get_base_url

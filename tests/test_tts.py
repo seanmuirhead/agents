@@ -8,7 +8,7 @@ import pathlib
 
 import pytest
 from livekit import agents
-from livekit.agents.utils import AudioBuffer, merge_frames
+from livekit_fork.agents.utils import AudioBuffer, merge_frames
 from livekit.plugins import azure, cartesia, elevenlabs, google, nltk, openai
 
 from .utils import wer

@@ -1,6 +1,6 @@
 from typing import Callable
 
-from livekit.agents import tokenize
+from livekit_fork.agents import tokenize
 
 
 class SentenceChunker:

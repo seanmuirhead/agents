@@ -21,7 +21,7 @@ from dataclasses import dataclass
 from typing import AsyncIterable, List, Union
 
 from livekit import agents, rtc
-from livekit.agents import stt, utils
+from livekit_fork.agents import stt, utils
 
 from google.cloud.speech_v2 import SpeechAsyncClient
 from google.cloud.speech_v2.types import cloud_speech

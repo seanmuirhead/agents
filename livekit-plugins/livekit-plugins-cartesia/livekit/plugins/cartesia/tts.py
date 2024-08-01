@@ -18,7 +18,7 @@ import os
 from dataclasses import dataclass
 
 import aiohttp
-from livekit.agents import tts, utils
+from livekit_fork.agents import tts, utils
 
 from .log import logger
 from .models import TTSDefaultVoiceId, TTSEncoding, TTSModels

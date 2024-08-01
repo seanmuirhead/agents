@@ -3,7 +3,7 @@ import logging
 from typing import Optional
 
 from livekit import rtc
-from livekit.agents import (
+from livekit_fork.agents import (
     AutoSubscribe,
     JobContext,
     WorkerOptions,

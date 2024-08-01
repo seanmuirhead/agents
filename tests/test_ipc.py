@@ -11,7 +11,7 @@ from multiprocessing.context import BaseContext
 from typing import ClassVar
 
 import psutil
-from livekit.agents import JobContext, JobProcess, ipc, job
+from livekit_fork.agents import JobContext, JobProcess, ipc, job
 from livekit.protocol import agent
 
 

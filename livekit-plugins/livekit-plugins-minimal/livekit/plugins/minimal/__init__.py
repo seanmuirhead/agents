@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from livekit.agents import Plugin
+from livekit_fork.agents import Plugin
 
 from .log import logger
 from .version import __version__

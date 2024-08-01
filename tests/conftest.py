@@ -1,5 +1,5 @@
 import pytest
-from livekit.agents import utils
+from livekit_fork.agents import utils
 
 
 @pytest.fixture

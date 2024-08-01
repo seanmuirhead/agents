@@ -3,7 +3,7 @@ import pickle
 import uuid
 
 import aiohttp
-from livekit.agents import tokenize
+from livekit_fork.agents import tokenize
 from livekit.plugins import openai, rag
 from tqdm import tqdm
 

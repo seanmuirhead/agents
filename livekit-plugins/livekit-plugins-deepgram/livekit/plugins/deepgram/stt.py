@@ -25,8 +25,8 @@ from typing import List
 from urllib.parse import urlencode
 
 import aiohttp
-from livekit.agents import stt, utils
-from livekit.agents.utils import AudioBuffer, merge_frames
+from livekit_fork.agents import stt, utils
+from livekit_fork.agents.utils import AudioBuffer, merge_frames
 
 from .log import logger
 from .models import DeepgramLanguages, DeepgramModels

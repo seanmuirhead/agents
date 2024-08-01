@@ -21,7 +21,7 @@ from typing import Any, Awaitable, MutableSet
 
 import httpx
 from livekit import rtc
-from livekit.agents import llm, utils
+from livekit_fork.agents import llm, utils
 
 import openai
 from openai.types.chat import ChatCompletionChunk, ChatCompletionMessageParam

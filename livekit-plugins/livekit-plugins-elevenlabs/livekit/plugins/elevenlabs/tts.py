@@ -24,7 +24,7 @@ from typing import Any, List, Literal
 
 import aiohttp
 from livekit import rtc
-from livekit.agents import tokenize, tts, utils
+from livekit_fork.agents import tokenize, tts, utils
 
 from .log import logger
 from .models import TTSEncoding, TTSModels

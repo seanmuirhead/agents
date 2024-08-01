@@ -19,7 +19,7 @@ from .version import __version__
 __all__ = ["SentenceTokenizer", "__version__"]
 
 
-from livekit.agents import Plugin
+from livekit_fork.agents import Plugin
 
 import nltk  # type: ignore
 

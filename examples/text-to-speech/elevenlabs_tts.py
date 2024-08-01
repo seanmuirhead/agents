@@ -3,7 +3,7 @@ import logging
 from typing import Optional
 
 from livekit import rtc
-from livekit.agents import JobContext, WorkerOptions, cli
+from livekit_fork.agents import JobContext, WorkerOptions, cli
 from livekit.plugins import elevenlabs
 
 logger = logging.getLogger("elevenlabs-tts-demo")

@@ -19,7 +19,7 @@ from dataclasses import dataclass
 from typing import AsyncContextManager
 
 import httpx
-from livekit.agents import tts, utils
+from livekit_fork.agents import tts, utils
 
 import openai
 

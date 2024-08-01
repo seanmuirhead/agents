@@ -2,7 +2,7 @@ import asyncio
 import logging
 
 from livekit import rtc
-from livekit.agents import (
+from livekit_fork.agents import (
     AutoSubscribe,
     JobContext,
     WorkerOptions,

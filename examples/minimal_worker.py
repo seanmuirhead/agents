@@ -1,6 +1,6 @@
 import logging
 
-from livekit.agents import AutoSubscribe, JobContext, WorkerOptions, cli
+from livekit_fork.agents import AutoSubscribe, JobContext, WorkerOptions, cli
 
 logger = logging.getLogger("my-worker")
 logger.setLevel(logging.INFO)

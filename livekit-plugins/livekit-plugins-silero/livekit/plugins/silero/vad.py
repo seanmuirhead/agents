@@ -22,7 +22,7 @@ from dataclasses import dataclass
 import numpy as np
 import onnxruntime  # type: ignore
 from livekit import agents, rtc
-from livekit.agents import utils
+from livekit_fork.agents import utils
 
 from . import onnx_model
 from .log import logger

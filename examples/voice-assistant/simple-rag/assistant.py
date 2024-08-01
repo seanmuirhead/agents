@@ -1,8 +1,8 @@
 import asyncio
 import pickle
 
-from livekit.agents import AutoSubscribe, JobContext, WorkerOptions, cli, llm
-from livekit.agents.voice_assistant import VoiceAssistant
+from livekit_fork.agents import AutoSubscribe, JobContext, WorkerOptions, cli, llm
+from livekit_fork.agents.voice_assistant import VoiceAssistant
 from livekit.plugins import deepgram, openai, rag, silero
 
 annoy_index = rag.annoy.AnnoyIndex.load("vdb_data")  # see build_data.py

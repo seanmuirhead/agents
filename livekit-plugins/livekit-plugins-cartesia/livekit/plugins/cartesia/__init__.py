@@ -17,7 +17,7 @@ from .version import __version__
 
 __all__ = ["TTS", "ChunkedStream", "__version__"]
 
-from livekit.agents import Plugin
+from livekit_fork.agents import Plugin
 
 from .log import logger
 

@@ -1,6 +1,6 @@
 import pytest
-from livekit.agents import tokenize
-from livekit.agents.tokenize import basic
+from livekit_fork.agents import tokenize
+from livekit_fork.agents.tokenize import basic
 from livekit.plugins import nltk
 
 # Download the punkt tokenizer, will only download if not already present
