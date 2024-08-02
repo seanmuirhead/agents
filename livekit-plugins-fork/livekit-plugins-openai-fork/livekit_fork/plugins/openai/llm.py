@@ -20,6 +20,7 @@ from dataclasses import dataclass
 from typing import Any, Awaitable, MutableSet
 
 import httpx
+from livekit import rtc
 from livekit_fork.agents import llm, utils
 
 import openai
