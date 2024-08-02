@@ -33,7 +33,7 @@ def _find_watchable_paths(main_file: pathlib.Path) -> list[pathlib.Path]:
             return False
 
     if not _try_add("livekit_fork.agents"):
-        _try_add("livekit-agents")
+        _try_add("livekit-agents-fork")
 
     for plugin in Plugin.registered_plugins:
         if not _try_add(plugin.package):
