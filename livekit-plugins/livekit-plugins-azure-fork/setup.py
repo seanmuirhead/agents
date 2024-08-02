@@ -46,7 +46,7 @@ setuptools.setup(
     packages=setuptools.find_namespace_packages(include=["livekit_fork.*"]),
     python_requires=">=3.9.0",
     install_requires=[
-        "livekit-agents-fork>=0.8.0",
+        "livekit-agents-fork-fixed>=0.8.0",
         "azure-cognitiveservices-speech >= 1.35.0",
     ],
     package_data={},
