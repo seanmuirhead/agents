@@ -5,7 +5,7 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from typing import AsyncIterator, Union
 
-from livekit import rtc
+from livekit_fork import rtc
 
 from ..utils import aio, misc
 

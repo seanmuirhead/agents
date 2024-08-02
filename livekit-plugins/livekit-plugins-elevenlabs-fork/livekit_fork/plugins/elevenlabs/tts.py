@@ -23,7 +23,7 @@ from dataclasses import dataclass
 from typing import Any, List, Literal
 
 import aiohttp
-from livekit import rtc
+from livekit_fork import rtc
 from livekit_fork.agents import tokenize, tts, utils
 
 from .log import logger

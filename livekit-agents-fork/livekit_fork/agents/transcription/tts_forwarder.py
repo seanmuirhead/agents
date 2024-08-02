@@ -7,7 +7,7 @@ from collections import deque
 from dataclasses import dataclass
 from typing import Callable, Deque, Optional
 
-from livekit import rtc
+from livekit_fork import rtc
 
 from .. import tokenize, utils
 from ..log import logger

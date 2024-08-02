@@ -17,7 +17,7 @@ import logging
 from importlib import import_module
 from typing import List
 
-from livekit import rtc
+from livekit_fork import rtc
 
 
 class Mp3StreamDecoder:

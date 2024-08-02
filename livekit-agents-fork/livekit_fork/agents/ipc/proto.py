@@ -5,7 +5,7 @@ import multiprocessing as mp
 from dataclasses import dataclass, field
 from typing import Any, Callable, ClassVar, Coroutine
 
-from livekit.protocol import agent
+from livekit_fork.protocol import agent
 
 from ..job import JobAcceptArguments, JobContext, JobProcess, RunningJobInfo
 from . import channel

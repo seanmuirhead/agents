@@ -7,7 +7,7 @@ import logging
 import multiprocessing as mp
 from dataclasses import dataclass
 
-from livekit import rtc
+from livekit_fork import rtc
 
 from .. import utils
 from ..job import JobContext, JobProcess

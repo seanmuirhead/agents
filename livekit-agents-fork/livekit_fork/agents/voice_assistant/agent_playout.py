@@ -3,7 +3,7 @@ from __future__ import annotations
 import asyncio
 from typing import AsyncIterable, Literal
 
-from livekit import rtc
+from livekit_fork import rtc
 
 from .. import transcription, utils
 from .log import logger

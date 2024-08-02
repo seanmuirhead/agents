@@ -3,7 +3,7 @@ from __future__ import annotations
 import asyncio
 from typing import Literal
 
-from livekit import rtc
+from livekit_fork import rtc
 
 from .. import stt as speech_to_text
 from .. import transcription, utils

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import uuid
 
-from livekit import rtc
+from livekit_fork import rtc
 
 
 def find_micro_track_id(room: rtc.Room, identity: str) -> str:

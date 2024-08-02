@@ -17,7 +17,7 @@ from dataclasses import dataclass
 from importlib import import_module
 from typing import TYPE_CHECKING, Any, Literal, Optional
 
-from livekit import rtc
+from livekit_fork import rtc
 
 if TYPE_CHECKING:
     from PIL import Image

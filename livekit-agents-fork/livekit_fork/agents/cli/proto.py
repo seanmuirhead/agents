@@ -4,7 +4,7 @@ import io
 from dataclasses import dataclass, field
 from typing import ClassVar
 
-from livekit.protocol import agent
+from livekit_fork.protocol import agent
 
 from ..ipc import channel
 from ..job import JobAcceptArguments, RunningJobInfo

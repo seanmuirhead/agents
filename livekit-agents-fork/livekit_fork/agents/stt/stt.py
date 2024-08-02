@@ -6,7 +6,7 @@ from dataclasses import dataclass, field
 from enum import Enum, unique
 from typing import AsyncIterator, List, Union
 
-from livekit import rtc
+from livekit_fork import rtc
 
 from ..utils import AudioBuffer, aio
 

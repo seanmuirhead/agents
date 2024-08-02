@@ -20,8 +20,8 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Any, Callable, Coroutine
 
-from livekit import rtc
-from livekit.protocol import agent, models
+from livekit_fork import rtc
+from livekit_fork.protocol import agent, models
 
 
 class AutoSubscribe(str, Enum):

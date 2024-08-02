@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import ctypes
 
-from livekit import rtc
+from livekit_fork import rtc
 
 from ..log import logger
 

@@ -16,7 +16,7 @@ import asyncio
 import os
 from dataclasses import dataclass
 
-from livekit import rtc
+from livekit_fork import rtc
 from livekit_fork.agents import stt, utils
 
 import azure.cognitiveservices.speech as speechsdk  # type: ignore

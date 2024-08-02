@@ -27,8 +27,8 @@ from urllib.parse import urljoin, urlparse
 import aiohttp
 import jwt
 import psutil
-from livekit import api
-from livekit.protocol import agent, models
+from livekit_fork import api
+from livekit_fork.protocol import agent, models
 
 from . import http_server, ipc, utils
 from .exceptions import AssignmentTimeoutError

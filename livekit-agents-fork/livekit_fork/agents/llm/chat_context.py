@@ -16,7 +16,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Literal
 
-from livekit import rtc
+from livekit_fork import rtc
 
 from . import function_context
 

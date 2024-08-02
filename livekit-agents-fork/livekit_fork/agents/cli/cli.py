@@ -5,7 +5,7 @@ import signal
 import sys
 
 import click
-from livekit.protocol import models
+from livekit_fork.protocol import models
 
 from .. import utils
 from ..log import logger

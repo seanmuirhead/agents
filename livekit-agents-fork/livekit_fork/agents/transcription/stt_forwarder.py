@@ -4,7 +4,7 @@ import asyncio
 import contextlib
 from typing import Optional
 
-from livekit import rtc
+from livekit_fork import rtc
 
 from .. import stt
 from ..log import logger

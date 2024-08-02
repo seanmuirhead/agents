@@ -4,7 +4,7 @@ import asyncio
 import time
 from typing import Any, AsyncIterable, Callable, Union
 
-from livekit import rtc
+from livekit_fork import rtc
 
 from .. import llm, tokenize, utils
 from .. import transcription as agent_transcription
