@@ -21,7 +21,7 @@ import wave
 from dataclasses import dataclass
 
 import aiohttp
-from livekit import agents
+from livekit_fork import agents
 from livekit_fork.agents import stt, utils
 from livekit_fork.agents.utils import AudioBuffer
 
