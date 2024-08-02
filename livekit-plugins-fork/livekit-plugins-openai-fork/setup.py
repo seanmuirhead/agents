@@ -20,12 +20,12 @@ import setuptools.command.build_py
 
 here = pathlib.Path(__file__).parent.resolve()
 about = {}
-with open(os.path.join(here, "livekit", "plugins", "openai", "version.py"), "r") as f:
+with open(os.path.join(here, "livekit_fork", "plugins", "openai", "version.py"), "r") as f:
     exec(f.read(), about)
 
 
 setuptools.setup(
-    name="livekit-plugins-openai",
+    name="livekit-plugins-openai-fork",
     version=about["__version__"],
     description="Agent Framework plugin for services from OpenAI",
     long_description=(here / "README.md").read_text(encoding="utf-8"),
@@ -45,10 +45,10 @@ setuptools.setup(
     ],
     keywords=["webrtc", "realtime", "audio", "video", "livekit"],
     license="Apache-2.0",
-    packages=setuptools.find_namespace_packages(include=["livekit.*"]),
+    packages=setuptools.find_namespace_packages(include=["livekit_fork.*"]),
     python_requires=">=3.9.0",
     install_requires=["livekit-agents[codecs, images]>=0.8.0.dev0", "openai ~= 1.35"],
-    package_data={"livekit.plugins.openai": ["py.typed"]},
+    package_data={"livekit_fork.plugins.openai": ["py.typed"]},
     project_urls={
         "Documentation": "https://docs.livekit.io",
         "Website": "https://livekit.io/",

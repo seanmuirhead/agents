@@ -4,7 +4,7 @@ import uuid
 
 import aiohttp
 from livekit_fork.agents import tokenize
-from livekit.plugins import openai, rag
+from livekit_fork.plugins import openai, rag
 from tqdm import tqdm
 
 # from this blog https://openai.com/index/new-embedding-models-and-api-updates/
